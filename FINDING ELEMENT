@@ -1,0 +1,26 @@
+#include<stdio.h>
+#include<limits.h>
+#include<stdbool.h>
+
+void main()
+{
+    int n,target;
+    scanf("%d",&n);
+    int a[n];
+    for(int i=0;i<n;i++)
+    {
+        scanf("%d",&a[i]);
+    }
+    scanf("%d",&target);
+    bool flag=false;
+    for(int i=0;i<n;i++)
+        if(a[i]==target){
+            printf("found value at %d",i);
+            flag=true;
+            break;
+
+        if(!flag){
+            printf("not found");
+        }
+    }
+}
